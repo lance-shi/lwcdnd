@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/lwcdnd": [
+                "lwcdnd/lwcdnd.js"
+            ],
+            "c/data": [
+                "data/data.js"
+            ],
+            "c/dnditem": [
+                "dnditem/dnditem.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ]
+}
