@@ -1,0 +1,9 @@
+<template>
+    <div class="droppable" data-id="complete" ondragover={handleDragOver} ondrop={handleDrop}>
+        <span class="task-header">{category}</span>
+        <template for:each={tasklist} for:item="task">
+            <c-dnditem key={task.taskid} task={task} onitemdrag={handleItemDrag}>
+            </c-dnditem>
+        </template>
+    </div>
+</template>
