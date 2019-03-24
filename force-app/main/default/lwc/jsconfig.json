@@ -3,14 +3,17 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/lwcdnd": [
-                "lwcdnd/lwcdnd.js"
-            ],
             "c/data": [
                 "data/data.js"
             ],
             "c/dnditem": [
                 "dnditem/dnditem.js"
+            ],
+            "c/lwcdnd2": [
+                "lwcdnd2/lwcdnd2.js"
+            ],
+            "c/dndlist": [
+                "dndlist/dndlist.js"
             ]
         }
     },

@@ -30,18 +30,18 @@ export default class Lwcdnd extends LightningElement {
         evt.preventDefault();
     }
 
-    handleItemDrag(evt) {
+    handleListItemDrag(evt) {
         console.log('Dragged id is: ' + evt.detail);
         this.draggingid = evt.detail;
     }
 
-    handleDrop(evt) {
+    handleItemDrop(evt) {
         let id = this.draggingid;
-        console.log('Received id is: ' + id);
+        let category = evt.detail;
 
         let tasks = this.tasklist.filter((task) => {
 			if (task.taskid === id) {
-			    task.category = "complete";           
+			    task.category = category;           
 			}              
 			return task;       
 		});
