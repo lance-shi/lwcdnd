@@ -1,19 +1,25 @@
 export const tasks = [
     {   
         taskid: "ta1",
-        name:"Learn Angular",
-        category:"wip", 
-        bgcolor: "yellow"},  
+        name:"Angular",
+        category:"wip"
+    },  
     
     {   
         taskid: "ta2",
         name:"React", 
-        category:"wip", 
-        bgcolor:"pink"},  
+        category:"wip"
+    },  
 
     {   
         taskid: "ta3",
         name:"Vue", 
-        category:"complete", 
-        bgcolor:"skyblue"}          
+        category:"complete"
+    },
+    
+    {
+        taskid: "ta4",
+        name: "Lightning Web Component",
+        category: "complete"
+    }
 ];

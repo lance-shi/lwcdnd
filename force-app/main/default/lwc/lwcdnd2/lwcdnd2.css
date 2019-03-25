@@ -1,3 +1,18 @@
-.task-header {
-    background-color: yellow;
+.container {
+    width: 80%;
+    height: 400px;
+    background: white;
+    margin: auto;
+    padding: 10px;
+}
+.left {
+    width: 20%;
+    height: 400px;
+    background: #6295E1;
+    float: left;
+}
+.right {
+    margin-left: 80%;
+    height: 400px;
+    background: aqua;
 }

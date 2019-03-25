@@ -1,6 +1,6 @@
 <template>
-    <div class="droppable" data-id="complete" ondragover={handleDragOver} ondrop={handleDrop}>
-        <span class="task-header">{category}</span>
+    <div class="droppable drop-container" ondragover={handleDragOver} ondrop={handleDrop}>
+        <div class="task-header">{category}</div>
         <template for:each={tasklist} for:item="task">
             <c-dnditem key={task.taskid} task={task} onitemdrag={handleItemDrag}>
             </c-dnditem>

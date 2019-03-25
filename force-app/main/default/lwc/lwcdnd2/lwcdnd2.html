@@ -1,13 +1,17 @@
 <template>
-    <div class="container-drag">
+    <div class="container-drag slds-text-heading_medium slds-align_absolute-center">
         Drag & Drop Sample 1
     </div>
-    <div class="container">
-        <c-dndlist tasklist={leftTasks} category="wip" onlistitemdrag={handleListItemDrag} 
-        onitemdrop={handleItemDrop}>
-        </c-dndlist>
-        <c-dndlist tasklist={rightTasks} category="complete" onlistitemdrag={handleListItemDrag}
-        onitemdrop={handleItemDrop}>
-        </c-dndlist>
-    </div>
+    <section class="container">
+        <div class="left">
+            <c-dndlist tasklist={leftTasks} category="wip" onlistitemdrag={handleListItemDrag} 
+                onitemdrop={handleItemDrop}>
+            </c-dndlist>
+        </div>
+        <div class="right">
+            <c-dndlist tasklist={rightTasks} category="complete" onlistitemdrag={handleListItemDrag}
+            onitemdrop={handleItemDrop}>
+            </c-dndlist>
+        </div>
+    </section>
 </template>
